@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 08</title>
+</head>
+<body>
+    <h1>Step 08</h1>
+
+    <h2><a href="./index.html">Torna alla Home</a></h2>
+    
+    <!-- Qui inseriremo JavaScript -->
+    <script>
+        // ITERAZIONE
+
+        let pokemon = prompt('Sei il Pikachu di Ash?\n1-sì\n2-no');
+   
+        // finché il valore salvato dentro il cassetto pokemon non è esattamente 1 o 2, oppure è diverso da 1 e 2, allora ti dovrò sempre richiedere se è il pikachu di ash.
+
+        while(pokemon != '1' && pokemon != '2'){
+            pokemon = prompt('Sei il Pikachu di Ash?\n1-sì\n2-no');
+        }
+
+        if(pokemon == '1'){
+            alert('Pikachu non entra nella sfera poké e ti fa il dito medio');
+        }else{
+            alert('Pikachu entra nella sfera e si gode la SPA');
+        }
+
+    </script>
+</body>
+</html>

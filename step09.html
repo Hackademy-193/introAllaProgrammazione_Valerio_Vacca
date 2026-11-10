@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 09</title>
+</head>
+<body>
+    <h1>Step 09</h1>
+
+    <h2><a href="./index.html">Torna alla Home</a></h2>
+    
+    <!-- Qui inseriremo JavaScript -->
+    <script>
+        // SEQUENZA + CONDIZIONE + ITERAZIONE
+
+        alert('Seleziona una bevanda');
+        let bevanda = prompt('0 - acqua\n1 - caffè\n2 - vino\n3 - birra');
+
+        while(bevanda != 0 && bevanda != 1 && bevanda != 2 && bevanda !=3){
+            bevanda = prompt('VALORE INSERITO NON VALIDO!\nSeleziona una bevanda\n0 - acqua\n1 - caffè\n2 - vino\n3 - birra');
+        }
+
+        // se la bevanda è ugale a 2 o a 3, allora mi deve chiedere l'eta.
+        // altrimenti la bevanda può essere erogata tranquillamente.
+
+        if(bevanda == 2 || bevanda == 3 ){
+            // solo se la bevanda è alcolica, mi chiede l'età
+            alert('Bevanda alcolica!');
+            let anni = prompt('Quanti anni hai?');
+            // ora devo verificare l'età. se è maggiorenne può bere, altrimenti no
+
+            if(anni >= 18){
+                alert('Puoi bere!');
+            }else{
+                alert('Non puoi bere!');
+            }
+
+        }else{
+            alert('Bevanda Erogata!');
+        }
+
+    </script>
+</body>
+</html>

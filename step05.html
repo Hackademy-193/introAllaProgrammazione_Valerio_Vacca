@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 05</title>
+</head>
+<body>
+    <h1>Step 05</h1>
+
+    <h2><a href="./index.html">Torna alla Home</a></h2>
+    
+    <!-- Qui inseriremo JavaScript -->
+    <script>
+
+        alert('Qual è il tuo nome?');
+        // qui dentro salvo il nome
+        let nome = prompt('Inserisci il tuo nome:');
+        // qui dentro salvo il nome + la fine del mio saluto
+        let saluto = nome + ', piacere di conoscerti!'; 
+        alert(saluto);
+        alert('Come vuoi che ti salutassi?');
+        // qui dentro salvo l'inizio del mio saluto
+        let tipo_saluto = prompt('Inserisci il tuo saluto:');
+        // accorpare l'inizio del saluto con la fine del saluto, sovrascrivendo il primo saluto.
+        saluto = tipo_saluto + ' ' + saluto;
+        alert(saluto);
+
+    </script>
+</body>
+</html>
